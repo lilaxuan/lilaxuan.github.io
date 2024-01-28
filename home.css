@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: 1fr 8fr 1fr;
+    grid-template-areas: "header header"
+        "sd      main"
+        "footer  footer";
+    height: 100vh;
+}
+
+.header {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: lightblue;
+    color: black;
+    border: 2px lightcoral;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: header;
+}
+
+.sidebar {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: black;
+    color: white;
+    border: 2px lightcoral;
+    grid-area: sd;
+
+}
+
+.content-area {
+    font-family: 'Times New Roman', Times, serif;
+    grid-area: main;
+}
+
+.footer {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: lightblue;
+    color: black;
+    border: lightcoral;
+    grid-area: footer;
+}
