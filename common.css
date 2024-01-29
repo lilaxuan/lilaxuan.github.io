@@ -2,7 +2,7 @@ body {
     margin: 0;
 }
 
-.header {
+/* .header {
     font-family: 'Times New Roman', Times, serif;
     background-color: lightblue;
     color: black;
@@ -11,7 +11,47 @@ body {
     align-items: center;
     justify-content: center;
     grid-area: header;
+} */
+
+.navbar {
+    overflow: hidden;
+    background-color: lightblue;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
+
+.navbar-items {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-items .nv-title {
+    display: inline-block;
+    padding: 10px;
+    margin-left: 5px;
+    margin-right: 800px;
+}
+
+.navbar-items .nv-item {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 18px;
+    color: black;
+    transition: 0.3s;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    padding: 0 5px;
+}
+
+a:hover {
+    color: orangered;
+}
+
 
 .footer {
     font-family: 'Times New Roman', Times, serif;
