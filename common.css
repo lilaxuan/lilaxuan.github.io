@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+}
+
+.header {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: lightblue;
+    color: black;
+    border: 2px lightcoral;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: header;
+}
+
+.footer {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: lightblue;
+    color: black;
+    border: lightcoral;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: footer;
+}
