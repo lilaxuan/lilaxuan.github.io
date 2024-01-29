@@ -43,7 +43,6 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* padding: 10px 20px 0 20px; */
     grid-area: header;
 }
 
@@ -85,14 +84,3 @@ a:hover {
     font-family: 'Times New Roman', Times, serif;
     grid-area: main;
 } */
-
-.footer {
-    font-family: 'Times New Roman', Times, serif;
-    background-color: lightblue;
-    color: black;
-    border: lightcoral;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* grid-area: footer; */
-}
