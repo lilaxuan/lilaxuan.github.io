@@ -4,13 +4,26 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 6fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr 8fr 1fr;
-    grid-template-areas: "sd header"
-        "sd      main"
-        "sd  footer";
+    grid-template-areas: "header"
+        "main"
+        "footer";
     height: 100vh;
 }
+
+
+/* .sticky-header {
+    background-color: green;
+    color: white;
+    text-align: center;
+    font-size: 3pc;
+    padding: 5px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+} */
 
 .header {
     font-family: 'Times New Roman', Times, serif;
@@ -20,21 +33,40 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    /* padding: 10px 20px 0 20px; */
     grid-area: header;
 }
 
-.sidebar {
+.navbar-items {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-items .nv-title {
+    display: inline-block;
+    padding: 10px;
+    margin-left: 5px;
+    margin-right: 800px;
+}
+
+.navbar-items .nv-item {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/* .sidebar {
     font-family: 'Times New Roman', Times, serif;
     background-color: black;
     color: white;
     border: 2px lightcoral;
     grid-area: sd;
-}
+} */
 
-.content-area {
+/* .content-area {
     font-family: 'Times New Roman', Times, serif;
     grid-area: main;
-}
+} */
 
 .footer {
     font-family: 'Times New Roman', Times, serif;
@@ -44,25 +76,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    grid-area: footer;
+    /* grid-area: footer; */
 }
 
-.sd-projects {
-    font-family: 'Times New Roman', Times, serif;
-    color: red;
-}
 
-.sd-projects:hover {
-    font-family: 'Times New Roman', Times, serif;
-    background-color: white;
-}
-
-.sd-blog {
-    font-family: 'Times New Roman', Times, serif;
-    color: white;
-}
-
-.sd-contact-info {
-    font-family: 'Times New Roman', Times, serif;
-    color: white;
-}
+/* .navbar-content {
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+} */
