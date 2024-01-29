@@ -2,6 +2,16 @@ body {
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+    padding: 0 5px;
+}
+
+a:hover {
+    color: orangered;
+}
+
 .container {
     display: grid;
     grid-template-columns: 1fr;
@@ -53,7 +63,15 @@ body {
 .navbar-items .nv-item {
     display: inline-block;
     margin-right: 20px;
+    font-size: 18px;
+    color: black;
+    transition: 0.3s;
 }
+
+
+/* .navbar-items .nv-item:hover {
+    color: red;
+} */
 
 /* .sidebar {
     font-family: 'Times New Roman', Times, serif;
@@ -78,11 +96,3 @@ body {
     justify-content: center;
     /* grid-area: footer; */
 }
-
-
-/* .navbar-content {
-    display: inline-block;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-} */
