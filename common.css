@@ -1,5 +1,9 @@
 body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
     margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
 }
 
 /* .header {
@@ -15,10 +19,13 @@ body {
 
 .navbar {
     overflow: hidden;
-    background-color: lightblue;
+    background-color: #333;
+    color: white;
     position: fixed;
     top: 0;
+    padding: 10px;
     width: 100%;
+    z-index: 1000;
 }
 
 .navbar-items {
@@ -42,18 +49,21 @@ body {
     transition: 0.3s;
 }
 
-a {
+.navbar a {
     text-decoration: none;
-    color: black;
+    color: white;
     padding: 0 5px;
 }
 
-a:hover {
-    color: orangered;
+.navbar a:hover {
+    background-color: white;
+    font: bold;
+    color: lightcoral;
+    box-shadow: 0px 0px 14px 0px lightcoral;
 }
 
 
-.footer {
+/* .footer {
     font-family: 'Times New Roman', Times, serif;
     background-color: lightblue;
     color: black;
@@ -62,4 +72,15 @@ a:hover {
     align-items: center;
     justify-content: center;
     grid-area: footer;
+} */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+footer p {
+    margin: 0;
 }
