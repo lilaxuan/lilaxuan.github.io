@@ -2,14 +2,13 @@ body {
     margin: 0;
 }
 
-
 .container {
     display: grid;
     grid-template-columns: 1fr 6fr;
     grid-template-rows: 1fr 8fr 1fr;
-    grid-template-areas: "header header"
+    grid-template-areas: "sd header"
         "sd      main"
-        "footer  footer";
+        "sd  footer";
     height: 100vh;
 }
 
@@ -30,7 +29,6 @@ body {
     color: white;
     border: 2px lightcoral;
     grid-area: sd;
-
 }
 
 .content-area {
@@ -52,7 +50,11 @@ body {
 .sd-projects {
     font-family: 'Times New Roman', Times, serif;
     color: red;
+}
 
+.sd-projects:hover {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: white;
 }
 
 .sd-blog {
