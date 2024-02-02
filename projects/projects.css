@@ -4,20 +4,25 @@
     gap: 10px;
     font-size: 20px;
     padding: 40px;
-    border: 2px solid green;
+    margin-top: 20%;
 }
 
-.projects-grid grid-item {
+.projects-grid .grid-item {
     background-color: #f0f0f0;
     padding: 20px;
     text-align: center;
-    border: 2px solid green;
 }
 
-/* For larger screens */
-@media (min-width: 600px) {
-    .grid-container {
-        grid-template-columns: repeat(4, 1fr);
-        /* Adjust column count for wider screens */
+/* for smaller screens */
+@media screen and (max-width: 600px) {
+    .projects-grid {
+        padding: 20px;
+        gap: 5px;
+        font-size: 16px;
+        margin-top: 40%;
+    }
+
+    .projects-grid .grid-item {
+        padding: 10px;
     }
 }

@@ -40,3 +40,24 @@
     color: #ff4500;
     cursor: pointer;
 }
+
+/* For smaller screens */
+@media screen and (max-width: 600px) {
+    .content-area {
+        padding: 20px;
+        margin-top: 20%;
+        margin-bottom: 10%;
+    }
+
+    .content-area li {
+        margin-bottom: 20px;
+        padding: 5px;
+    }
+
+    .content-area h2,
+    .content-area p {
+        margin-left: 10px;
+        margin-right: 10px;
+        line-height: 1;
+    }
+}
